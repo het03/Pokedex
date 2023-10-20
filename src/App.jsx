@@ -4,99 +4,107 @@ import "./App.css";
 function App() {
   return (
     <>
-      <div class="pokedex">
-        <div class="left-container">
-          <div class="left-container__top-section">
-            <div class="top-section__blue"></div>
-            <div class="top-section__small-buttons">
-              <div class="top-section__red"></div>
-              <div class="top-section__yellow"></div>
-              <div class="top-section__green"></div>
+      <div className="pokedex">
+        <div className="left-container">
+          <div className="left-container__top-section">
+            <div className="top-section__blue"></div>
+            <div className="top-section__small-buttons">
+              <div className="top-section__red"></div>
+              <div className="top-section__yellow"></div>
+              <div className="top-section__green"></div>
             </div>
           </div>
-          <div class="left-container__main-section-container">
-            <div class="left-container__main-section">
-              <div class="main-section__white">
-                <div class="main-section__black">
-                  <div class="main-screen hide">
-                    <div class="screen__header">
-                      <span class="poke-name"></span>
-                      <span class="poke-id"></span>
+          <div className="left-container__main-section-container">
+            <div className="left-container__main-section">
+              <div className="main-section__white">
+                <div className="main-section__black">
+                  <div className="main-screen hide">
+                    <div className="screen__header">
+                      <span className="poke-name"></span>
+                      <span className="poke-id"></span>
                     </div>
-                    <div class="screen__image">
-                      <img src="" class="poke-front-image" alt="front" />
-                      <img src="" class="poke-back-image" alt="back" />
+                    <div className="screen__image">
+                      <img src="" className="poke-front-image" alt="front" />
+                      <img src="" className="poke-back-image" alt="back" />
                     </div>
-                    <div class="screen__description">
-                      <div class="stats__types">
-                        <span class="poke-type-one"></span>
-                        <span class="poke-type-two"></span>
+                    <div className="screen__description">
+                      <div className="stats__types">
+                        <span className="poke-type-one"></span>
+                        <span className="poke-type-two"></span>
                       </div>
-                      <div class="screen__stats">
-                        <p class="stats__weight">
-                          weight: <span class="poke-weight"></span>
+                      <div className="screen__stats">
+                        <p className="stats__weight">
+                          weight: <span className="poke-weight"></span>
                         </p>
-                        <p class="stats__height">
-                          height: <span class="poke-height"></span>
+                        <p className="stats__height">
+                          height: <span className="poke-height"></span>
                         </p>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="left-container__controllers">
-                <div class="controllers__d-pad">
-                  <div class="d-pad__cell top"></div>
-                  <div class="d-pad__cell left"></div>
-                  <div class="d-pad__cell middle"></div>
-                  <div class="d-pad__cell right"></div>
-                  <div class="d-pad__cell bottom"></div>
+              <div className="left-container__controllers">
+                <div className="controllers__d-pad">
+                  <div className="d-pad__cell top"></div>
+                  <div className="d-pad__cell left"></div>
+                  <div className="d-pad__cell middle"></div>
+                  <div className="d-pad__cell right"></div>
+                  <div className="d-pad__cell bottom"></div>
                 </div>
-                <div class="controllers__buttons">
-                  <div class="buttons__button">B</div>
-                  <div class="buttons__button">A</div>
+                <div className="controllers__buttons">
+                  <div className="buttons__button">B</div>
+                  <div className="buttons__button">A</div>
                 </div>
               </div>
             </div>
-            <div class="left-container__right">
-              <div class="left-container__hinge"></div>
-              <div class="left-container__hinge"></div>
+            <div className="left-container__right">
+              <div className="left-container__hinge"></div>
+              <div className="left-container__hinge"></div>
             </div>
           </div>
         </div>
-        <div class="right-container">
-          <div class="right-container__black">
-            <div class="right-container__screen">
-              <div class="search-bar">
-                <input
-                  type="text"
-                  class="search-bar__input"
-                  placeholder="Search..."
-                />
-                <button class="search-bar__button">Search</button>
+        <div className="right-container">
+          <div className="inner">
+            <div className="right-container__black">
+              <div className="right-container__screen">
+                <div className="search-bar">
+                  <input
+                    type="text"
+                    className="search-bar__input"
+                    placeholder="Search Pokemon..."
+                  />
+                  <button className="search-bar__button">Search</button>
+                </div>
+                <div className="list-parent">
+                  <div className="list-item"></div>
+                  <div className="list-item"></div>
+                  <div className="list-item"></div>
+                  <div className="list-item"></div>
+                  <div className="list-item"></div>
+                  <div className="list-item"></div>
+                  <div className="list-item"></div>
+                  <div className="list-item"></div>
+                  <div className="list-item"></div>
+                  <div className="list-item"></div>
+                  <div className="list-item"></div>
+                  <div className="list-item"></div>
+                  <div className="list-item"></div>
+                  <div className="list-item"></div>
+                  <div className="list-item"></div>
+                  <div className="list-item"></div>
+                </div>
               </div>
-              <div class="list-item"></div>
-              <div class="list-item"></div>
-              <div class="list-item"></div>
-              <div class="list-item"></div>
-              <div class="list-item"></div>
-              <div class="list-item"></div>
-              <div class="list-item"></div>
-              <div class="list-item"></div>
-              <div class="list-item"></div>
-              <div class="list-item"></div>
-              <div class="list-item"></div>
-              <div class="list-item"></div>
-              <div class="list-item"></div>
-              <div class="list-item"></div>
-              <div class="list-item"></div>
-              <div class="list-item"></div>
             </div>
-          </div>
-          <div class="right-container__buttons">
-            <div class="left-button">Prev</div>
-            <div class="right-button">Next</div>
-            <div class="right-section__yellow"></div>
+            <div className="line-container">
+              <div className="line-1"></div>
+              <div className="line-2"></div>
+            </div>
+            <div className="right-container__buttons">
+              <div className="left-button">Prev</div>
+              <div className="right-button">Next</div>
+              <div className="right-section__yellow"></div>
+            </div>
           </div>
         </div>
       </div>
